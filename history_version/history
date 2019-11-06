@@ -1,0 +1,52 @@
+I.PI_caculation_from_input_bi
+1.PI_caculation_from_input_bi_v1.pl
+	1.read allele frequency table and generate Hash of Hash;
+	2.get the minimal allele frequency of each locus,if allele of locus is not in the table, we use minimal allele frequency in the locus;
+	3.get locus, child profile and father profile from input, get PI, and print it to STDOUT;
+	4.important, it can't caculate mutation locus;
+
+II.PI_Caculation_triplet_input.pl
+	1. can't get minmal alllele frequency of each locus,if allele of locua is not in the table, get error
+	2. can't caculate mutation locus
+
+II.PI_Caculation_from_profile_bi
+1.PI_Caculation_from_profile_bi_v1.pl		test ok
+	1.read allele frequency table and generate HoH;
+	2.get the minimal allele frequency of each locus, if allele of locus is not in the table, we use minimal allele frequency in that locus;
+	3.get locus, C_profile and F_profile from profile file, get PI of each locus;
+	4.get CPI;
+	5.important:can't caculate mutation
+	6.important:not rounded 4 float
+2.PI_Caculation_from_profile_bi_v2.pl 
+	1.each pi of locus is rounded with 4 digital float
+3.PI_Caculation_from_profile_bi_v3.pl 
+	1.can get mutation pi
+	2.important:PI value is rounded and mutation PI is not rounded because is too small
+4.PI_Caculation_from_profile_bi_v4.pl 
+	1.get option without in order
+
+III.PI_Caculation_from_profile_tri
+1.PI_Caculation_from_profile_tri_v1.pl
+	1. option is not need in order
+	2. read frequency table and generate hash of hash
+	3. get minal allele frequency of each locus
+	4. in genotype input, the order is father mother and child
+	5. get PI and rounded to 4 digit
+	6. if exists mutation, the pi is 1
+2.PI_Caculation_from_profile_tri_v2.pl
+	1. new algorithm
+	2. 6. if exists mutation, the pi is 1
+3.PI_Caculation_from_profile_tri_v3.pl
+	1. new algorithm
+	2. can caculate PI, if exists mutation
+	3. PI format is in scientific and round 4 digital
+4.PI_Caculation_from_profile_tri_v4.pl
+	4. output tri_PI and FC_PI and MC_PI	
+5.PI_Caculation_from_profile_v5.pl
+	1. can be used in tri and bi 
+6.PI_Caculation_from_profile_v6.pl
+	1.can set display format include -precision -float -scientific
+
+
+
+
