@@ -3,7 +3,7 @@ This package which is writed in perl is used to caculate paternity index(PI) in 
 it can be used in duo case(father-child, or mother-child), tro case(mother-child-father).
 
 Usage:
-perl PI_v9.pl -table path/to/allelicFrequencyTable -in path/to/genofile -out path/to/resultfile [option]
+perl PI_v9.pl -table path/to/allelicFrequencyTable -in path/to/genofile -out path/to/resultfile [option].
 for example:
 perl PI_v9.pl -table ./AF/CNAS_AF_39.txt -in ./test_data/2019-010.txt -out 2019-010-v9.result
 
@@ -18,6 +18,7 @@ options:
 -precision        accuracy of display, default is 4 digital
 -float            display in float
 -scientific       display in sicentific, dufault is scientific
+
 
 format specification
 1.allelic frequency table
