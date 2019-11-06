@@ -1,6 +1,7 @@
 # ForensicGeneticsTools
 This package which is writed in perl is used to caculate paternity index(PI) in forensic genetics. 
 it can be used in duo case(father-child, or mother-child), tro case(mother-child-father).
+
 Usage:
 perl PI_v9.pl -table path/to/allelicFrequencyTable -in path/to/genofile -out path/to/resultfile [option]
 for example:
