@@ -57,15 +57,21 @@ it contain 3 case:
   and you want to know wether the mother(alleged mother).<br>
 3.you don't know wether the moher and father is biological, 
   and you want to know both. <br>
+  
 so in tro case, we first judge mother-child as duo, if The PI_MC is greater than 10000, 
 we can judge that the mother is biological mother.<br> 
 then PI = (motehr probility * father probility)/(mother probility * random male) <br>
+
 otherwise we take father-child as duo, if PI_FC is greater than 10000,
 we can judge that the father is biological father. <br> then 
 PI = (mother probility * father probility)/(random femal * father probility) <br>
+
 if PI_FC is smaller than 10000. we can't caculate PI_tri, and we only give you the PI of mother-child and PI of father-child.
  
-
+## future
+1. finish the perl/tk
+2. change code into python3
+3. finish the GUI in python3
 
 
 
